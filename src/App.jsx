@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from './components/Navbar';
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Products from "./pages/Products";
@@ -12,7 +13,6 @@ import Projects from "./pages/settings/Projects";
 
 
 
-import Navbar from "./components/Navbar";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 
@@ -28,20 +28,19 @@ const theme = createTheme({
 function App() {
   return (
     <BrowserRouter>
-    <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme}>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/pricing" element={<Pricing />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/curriculum-vitae" element={<CurriculumVitae />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/projects" element={<Projects />} />
-
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/curriculum-vitae" element={<CurriculumVitae />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
       </ThemeProvider>
 
     </BrowserRouter>
