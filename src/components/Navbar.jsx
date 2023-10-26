@@ -63,7 +63,7 @@ function Navbar() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <div>
-              <img src=".././public/rmbg-logo.png" height="100rem"/>
+              <img src="rmbg-logo.png" height="100rem"/>
           </div>
 
           <Box sx={{ flexGrow: 4  , display: { xs: 'flex', md: 'none' } }}>

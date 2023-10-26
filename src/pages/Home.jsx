@@ -9,10 +9,9 @@ import { TypeAnimation } from 'react-type-animation';
 function Home() {
   return(
     <>
-      <div style={{backgroundColor: "#183D3D", height:"5rem"}}>
-        
-      </div>
-      <div className="body" style={{backgroundColor:"#040D12", height:"200vh", color: "#00FFA1"}}> 
+      <div style={{backgroundColor: "#183D3D", height:"5rem"}}></div>
+
+      <div className="body" style={{backgroundColor:"#040D12", height:"50vh", color: "#00FFA1"}}> 
         <br/><br/><br/>
         {/* <SketchCircleFilled /> */}
         <div className="container" style={{ display: 'flex', justifyContent: 'center', marginTop:"10rem" }}>
@@ -25,7 +24,7 @@ function Home() {
               1000,
               '"We can make life easier for you."',
               1000,
-              '"We are Web Developers..."',
+              '"We develop application that benefit your business."',
               1000
             ]}
             wrapper="span"
@@ -35,6 +34,11 @@ function Home() {
           /></h5>
         </div>
         <FloatButton.BackTop />
+      </div>
+      <div style={{backgroundColor: "#183D3D", height:"2.5rem"}}></div>
+
+      <div>
+
       </div>
     </>
     )
