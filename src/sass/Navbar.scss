@@ -6,6 +6,25 @@ $Grey: #93B1A6;
 
 
 
+.buttones::after {
+    content: "";
+    position: absolute;
+    top: calc(var(--y, 0) * 1px);
+    left: calc(var(--x, 0) * 1px);
+
+    width: 5px;
+    height: 30px;
+    background: radial-gradient(white, #00FFA1 90%);
+  
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  
+  .buttones:hover::after {
+    opacity: 50;
+  }
+
+// ----------------------------
 .ninjalogodesign {
     padding-top: 10px;;
     left: 50%;

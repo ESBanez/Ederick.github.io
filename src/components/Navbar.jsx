@@ -18,6 +18,8 @@ import { faUserNinja } from '@fortawesome/free-solid-svg-icons';
 
 import "../sass/UniversalBackground.scss";
 import "../sass/Navbar.scss";
+import '../JS/navbar.js';
+
 
 
 const CustomTypography = styled(Typography)`
@@ -130,6 +132,7 @@ function Navbar() {
                   
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color:"#00FFA1", display: 'block' }}
+                  className="buttones"
                 >
                   {page.name}
                 </Button>
