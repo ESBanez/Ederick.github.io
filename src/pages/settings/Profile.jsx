@@ -1,6 +1,6 @@
-function Profile () {
-    return <>Profile</>;
+function MyTeam () {
+    return <>My-team</>;
 }
 
 
-export default Profile;
+export default MyTeam;

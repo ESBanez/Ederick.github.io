@@ -1,0 +1,17 @@
+// Define Sass variables
+$Neon: #00FFA1;
+$Blacky: #040D12;
+$Darkgreen: #183D3D;
+$Green: #5C8374;
+$Grey: #93B1A6;
+
+body {
+  background-color: $Darkgreen; // Use the variable here
+}
+
+.body {
+  background-color: $Darkgreen; // Use the variable here
+  color: #{$Neon};
+}
+
+/* Add your other styles here */

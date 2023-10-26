@@ -13,6 +13,12 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from "react-router-dom";
 import styled from '@emotion/styled'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUserNinja } from '@fortawesome/free-solid-svg-icons';
+
+import "../sass/UniversalBackground.scss";
+import "../sass/Navbar.scss";
+
 
 const CustomTypography = styled(Typography)`
   font-family: Roboto, sans-serif;
@@ -28,7 +34,7 @@ const pages = [
 ];
 
 const settings = [
-{ name: 'Profile', id: 1, path: "/profile" },
+{ name: 'My Team', id: 1, path: "/My-team" },
 { name: 'Curriculum-vitae', id: 2, path: "/curriculum-vitae" },
 { name: 'Projects', id: 3, path: "/projects" },
 ];
@@ -53,26 +59,12 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar className="container-fluid" style={{ backgroundColor: "#040D12", marginTop: "2rem"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <CustomTypography
-            variant="h6"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'Roboto Condensed',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: '#00FFA1',
-              textDecoration: 'none',
-            }}
-          >
-            LOGO
-          </CustomTypography>
+          <div>
+              <img src=".././public/rmbg-logo.png" height="100rem"/>
+          </div>
 
           <Box sx={{ flexGrow: 4  , display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -134,7 +126,7 @@ function Navbar() {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Link to={page.path} key={page.id} style={{ textDecoration: 'none'}}>
-                <Button
+                <Button 
                   
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color:"#00FFA1", display: 'block' }}
@@ -147,8 +139,9 @@ function Navbar() {
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="My experiences">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0, color: '#00FFA1' }}>
-                <p>E</p>
+              <IconButton onClick={handleOpenUserMenu} sx={{ pt: 5, color: '#00FFA1' }}>
+                <FontAwesomeIcon icon={faUserNinja}
+                className="textdesign"/>
               </IconButton>
             </Tooltip>
             <Menu
@@ -172,7 +165,7 @@ function Navbar() {
                 <Link to={setting.path} key={setting.id} style={{ textDecoration: 'none'}} >
             
                   <MenuItem key={setting.path} onClick={handleCloseUserMenu}>
-                    <CustomTypography textAlign="center" style={{ color: '#00FFA1' }}>{setting.name}</CustomTypography>
+                    <CustomTypography textAlign="center" style={{ color: 'black' }}>{setting.name}</CustomTypography>
                   </MenuItem>
 
                 </Link>

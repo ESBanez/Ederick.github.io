@@ -1,0 +1,53 @@
+$Neon: #00FFA1;
+$Blacky: #040D12;
+$Darkgreen: #183D3D;
+$Green: #5C8374;
+$Grey: #93B1A6;
+
+
+
+.textdesign {
+    padding-top: 10px;;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 25px;
+    line-height: 60px;
+    color: #fff;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, $Neon, $Darkgreen, red, violet, purple, blue);
+    background-size: 500%;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .textdesign:hover {
+    animation: animate 8s linear infinite;
+  }
+  @keyframes animate {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }
+  .textdesign:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(45deg, #f15523, #ef3224, #7c3697);
+    background-size: 400%;
+    border-radius: 50px;
+    opacity: 0;
+    transition: 0.5%;
+  }
+  .textdesign:hover:before {
+    filter: blur(20px);
+    opacity: 1;
+    animation: animate 8s linear infinite;
+  }
+  
