@@ -141,7 +141,7 @@ function Navbar() {
             <Tooltip title="My experiences">
               <IconButton onClick={handleOpenUserMenu} sx={{ pt: 5, color: '#00FFA1' }}>
                 <FontAwesomeIcon icon={faUserNinja}
-                className="textdesign"/>
+                className="ninjalogodesign"/>
               </IconButton>
             </Tooltip>
             <Menu

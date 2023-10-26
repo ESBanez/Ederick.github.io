@@ -6,7 +6,7 @@ $Grey: #93B1A6;
 
 
 
-.textdesign {
+.ninjalogodesign {
     padding-top: 10px;;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -20,7 +20,7 @@ $Grey: #93B1A6;
     border-radius: 50%;
     z-index: 1;
   }
-  .textdesign:hover {
+  .ninjalogodesign:hover {
     animation: animate 8s linear infinite;
   }
   @keyframes animate {
@@ -31,7 +31,7 @@ $Grey: #93B1A6;
       background-position: 400%;
     }
   }
-  .textdesign:before {
+  .ninjalogodesign:before {
     content: "";
     position: absolute;
     top: -5px;
@@ -45,9 +45,10 @@ $Grey: #93B1A6;
     opacity: 0;
     transition: 0.5%;
   }
-  .textdesign:hover:before {
+  .ninjalogodesign:hover:before {
     filter: blur(20px);
     opacity: 1;
     animation: animate 8s linear infinite;
   }
   
+
