@@ -61,7 +61,15 @@ function Navbar() {
   };
 
   return (
-    <AppBar className="container-fluid" style={{ backgroundColor: "#040D12", marginTop: "2rem"}}>
+    <AppBar className="container-fluid" style={{
+      backgroundImage: `linear-gradient(to bottom, rgba(1, 15, 26, 1), rgba(0, 15, 26, 0.5) 95%)`,
+      boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)", // Add a subtle shadow
+      borderBottom: "0.1px #00FFA1", // Create a bottom border
+      borderTop: "2px solid #00FFA1", // Create a bottom border
+      zIndex: 1, // Ensure the element appears on top
+      position: "relative", // Set a relative position to manage stacking
+      padding: "0.5rem", // Add padding for depth
+    }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <div>

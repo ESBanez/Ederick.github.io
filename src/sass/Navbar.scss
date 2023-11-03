@@ -1,9 +1,9 @@
-$Neon: #00FFA1;
-$Blacky: #040D12;
-$Darkgreen: #183D3D;
-$Green: #5C8374;
-$Grey: #93B1A6;
-
+$Neon: #00FFA1; //rgb(0,255,161)
+$blacky: #040D12; //rgb(4,13,18)
+$darkgreen: #183D3D; //rgb(24,61,61)
+$blue: #000F1A; //rgb(0,15,26)
+$green: #5C8374; //rgb(92,131,116)
+$grey: #93B1A6; //rgb(147,177,166)
 
 
 .buttones::after {
@@ -34,7 +34,6 @@ $Grey: #93B1A6;
     line-height: 60px;
     color: #fff;
     box-sizing: border-box;
-    background: linear-gradient(90deg, $Neon, $Darkgreen, red, violet, purple, blue);
     background-size: 500%;
     border-radius: 50%;
     z-index: 1;
@@ -58,7 +57,15 @@ $Grey: #93B1A6;
     right: -5px;
     bottom: -5px;
     z-index: -1;
-    background: linear-gradient(45deg, #f15523, #ef3224, #7c3697);
+    background: radial-gradient(
+      $Neon, 
+      hsl(200 100% 60%) 
+    ) fixed;
+    background: conic-gradient(
+      $Neon, 
+      hsl(200, 51%, 42%), 
+      $Neon 
+    ) fixed;
     background-size: 400%;
     border-radius: 50px;
     opacity: 0;
@@ -70,4 +77,3 @@ $Grey: #93B1A6;
     animation: animate 8s linear infinite;
   }
   
-

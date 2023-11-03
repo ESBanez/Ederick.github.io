@@ -1,0 +1,27 @@
+$neon: #00FFA1; // rgb(0,255,161)
+$blacky: #040D12; // rgb(4,13,18)
+$darkgreen: #183D3D; // rgb(24,61,61)
+$blue: #000F1A; // rgb(0,15,26)
+$green: #5C8374; // rgb(92,131,116)
+$grey: #93B1A6; // rgb(147,177,166)
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  background-color: #000F1A;
+  position: relative;
+  color: black;
+  font-size: 12rem;
+}
+
+.marquee {
+  white-space: nowrap;
+  animation: rightThenLeft 40s linear infinite;
+  position: absolute;
+  width: 200%;
+}
+
+@keyframes rightThenLeft {
+  0% { left: 100%; }
+  100% { left: -100%; }
+}

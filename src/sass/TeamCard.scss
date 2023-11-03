@@ -1,0 +1,163 @@
+ // Define Sass variables
+$neon: #00FFA1; //rgb(0,255,161)
+$blacky: #040D12; //rgb(4,13,18)
+$darkgreen: #183D3D; //rgb(24,61,61)
+$blue: #000F1A; //rgb(0,15,26)
+$green: #5C8374; //rgb(92,131,116)
+$grey: #93B1A6; //rgb(147,177,166)
+
+ 
+ // Meet the team cards
+
+  $bodyFont: 'Open Sans', sans-serif;
+
+
+  #cardcontainer {
+    border-radius: "50%";
+    width: 250px;
+    height: 240px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .card-wrapper {
+    position: relative;
+  }
+
+  .cardi {
+    position: relative;
+    top: 50%;
+    width: 350px;
+    height: 350px;
+    // transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: 1s;
+    border: transparent; /* Set border to transparent */
+    border-radius: 5px; 
+
+    // Image-background
+    .card-image {
+        // transform: translate(-50%, -50%);
+        cursor: pointer;
+        transition: 1s;
+        backdrop-filter: blur(10px); 
+
+        // 
+        border-radius: 50%; /* Make the image background circular */
+        position: absolute;
+        width: 10rem;
+        height: auto;
+        z-index: 2;
+        background-color: transparent;
+        box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+        transition: .5s;
+    }
+
+    &:hover .card-image {
+        transform: translateY(10px);
+        transition: all .9s;
+    }
+}
+
+.cardi:hover img {
+    opacity: 0.1;
+    transition: .5s;
+}
+
+
+  /**** Social Icons *****/
+  .social-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -100%);
+    z-index: 3;
+    display: flex;
+    margin-left: -0.5rem;
+  
+    li {
+      list-style: none;
+  
+      a {
+        position: relative;
+        display: block;
+        line-height: 10px;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 23px;
+        color: #fff3f3;
+        margin: 30px; /* Add margin to create space between icons */
+        transition: .4s;
+        transform: translateY(60px);
+        opacity: 0;
+      }
+    }
+  }
+  
+
+// Adjust icons up or down
+  .cardi:hover .social-icons li a {
+    transform: translateY(100px) scale(1.5); /* Adjust the scale factor as needed */
+  opacity: 1;
+  transition: transform 0.2s ease; /* Add a transition for a smooth effect */
+
+  .social-icons li a:hover  {
+    transition: .2s;
+    background: radial-gradient(
+      $neon, 
+      hsl(200 100% 60%) 
+    ) fixed;
+    background: conic-gradient(
+      $neon, 
+      hsl(200, 51%, 42%), 
+      $neon 
+    ) fixed;
+    }
+    .fab {
+      color: white;
+    } 
+  }
+
+  .social-icons li a .fab  {
+    transition: .10s;
+      
+    &:hover {
+        transform: rotateY(360deg);
+    } 
+  }
+
+  .cardi:hover li:nth-child(1) a {
+      transition-delay: 0.1s;
+  }
+  .cardi:hover li:nth-child(2) a {
+    transition-delay: 0.2s;
+  }
+  .cardi:hover li:nth-child(3) a {
+    transition-delay: 0.3s;
+  }
+  .cardi:hover li:nth-child(4) a {
+    transition-delay: 0.4s;
+  }
+
+  /**** Personal Details ****/
+
+  .details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    height: 0px;
+    z-index: 1;
+    font-family: $bodyFont;
+    font-weight: 1000;
+    color: $blacky;
+
+
+    h2 {
+      margin: 30px 0;
+      padding-top: 3.3rem;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+  }

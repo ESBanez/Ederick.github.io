@@ -1,0 +1,77 @@
+$neon: #00FFA1; // rgb(0,255,161)
+$blacky: #040D12; // rgb(4,13,18)
+$darkgreen: #183D3D; // rgb(24,61,61)
+$blue: #000F1A; // rgb(0,15,26)
+$green: #5C8374; // rgb(92,131,116)
+$grey: #93B1A6; // rgb(147,177,166)
+
+
+
+
+
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgb(0, 0, 0) 0%,rgba(255,255,255,0) 100%);
+}
+
+$animationSpeed: 40s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+
+// Styling
+.slider {
+	background: white;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	height: 70px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 100%;
+	
+	&::before,
+	&::after {
+		@include white-gradient;
+		content: "";
+		height: 100px;
+		position: absolute;
+		width: 100px;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(250px * 14);
+	}
+	
+    .slide {
+        height: 70px;
+        width: 250px;
+        display: flex;
+        align-items: center; /* Vertically center the content */
+        justify-content: center; /* Horizontally center the content */
+
+        background: 
+        linear-gradient(to top, $darkgreen, $blue), /* Gradient for the top */
+        linear-gradient(to bottom, $darkgreen, $blue), /* Gradient for the bottom */
+        white; /* Background color for the middle */
+      
+    }
+    
+
+}
