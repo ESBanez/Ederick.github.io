@@ -5,23 +5,74 @@ $blue: #000F1A; // rgb(0,15,26)
 $green: #5C8374; // rgb(92,131,116)
 $grey: #93B1A6; // rgb(147,177,166)
 
-.wrapper {
-  width: 100%;
-  overflow: hidden;
-  background-color: #000F1A;
-  position: relative;
-  color: black;
-  font-size: 12rem;
+
+
+
+
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgb(0, 0, 0) 0%,rgba(255,255,255,0) 100%);
 }
 
-.marquee {
-  white-space: nowrap;
-  animation: rightThenLeft 40s linear infinite;
-  position: absolute;
-  width: 200%;
+$animationSpeed: 50s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(250px * 5)); } // Adjust the slide count
 }
 
-@keyframes rightThenLeft {
-  0% { left: 100%; }
-  100% { left: -100%; }
+
+// Styling
+.slider {
+  color: $neon;
+	background: $blue;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	height: 50px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 100%;
+	
+	&::before,
+	&::after {
+		@include white-gradient;
+		content: "";
+		height: 100px;
+		position: absolute;
+		width: 100px;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(-250px * 5); // Adjust the slide count
+		padding: 0 250px; // Add padding for smooth looping
+	}
+	
+    .slide {
+        height: 70px;
+        width: 250px;
+        display: flex;
+        align-items: center; /* Vertically center the content */
+        justify-content: center; /* Horizontally center the content */
+
+        background: 
+        linear-gradient(to top, $darkgreen, $blue), /* Gradient for the top */
+        linear-gradient(to bottom, $darkgreen, $blue), /* Gradient for the bottom */
+      
+    }
+    
+
 }

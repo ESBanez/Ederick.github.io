@@ -62,7 +62,7 @@ const BeginTour = () => {
       id: 3,
       ref:ref3,
       Icon: faBlog,
-      Paragraph: "Upcoming blog to be posted online wait for release through Amazon."
+      Paragraph: "Upcoming blog to be posted online wait for release through AWS."
     }
   ];
                                 //   ref={ref1}, ref={ref2, ref={ref3}

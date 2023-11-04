@@ -7,7 +7,7 @@ import TeamCard from '../components/TeamCard';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
-import SkillProjectFeedback from "./../components/SkillProjectFeedback";
+// import SkillProjectFeedback from "./../components/SkillProjectFeedback";
 import RunningWords from "../components/RunningWords.jsx";
 // import Tooltip from '@mui/material/Tooltip';
 import MovingPictures from "./../components/MovingPictures";
@@ -77,12 +77,11 @@ function Home() {
       
         {/* Moving words from left to right */}
         <div style={{backgroundColor: "#000F1A"}}>
-        <br/><br/>
-          <BeginTour/>
+          <br/><br/>
+            <BeginTour/>
         </div>
 
-        <SkillProjectFeedback/>
-        <RunningWords/>
+        <RunningWords style={{backgroundColor: "#000F1A"}}/>
         <br/><br/><br/><br/><br/><br/><br/>
 
 
