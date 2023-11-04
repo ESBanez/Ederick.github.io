@@ -11,7 +11,7 @@ import SkillProjectFeedback from "./../components/SkillProjectFeedback";
 import RunningWords from "../components/RunningWords.jsx";
 // import Tooltip from '@mui/material/Tooltip';
 import MovingPictures from "./../components/MovingPictures";
-
+import BeginTour from "./../components/BeginTour";
 
 
 function Home() {
@@ -27,15 +27,15 @@ function Home() {
               // Same substring at the start will only be typed out once, initially
               '"We are Web Developers."',
               1000, // wait 1s before replacing "Mice" with "Hamsters"
-              '"We can help you improve your business."',
+              '"We help you improve your business."',
               1000,
-              '"We can make life easier for you."',
+              '"We make life easier for you."',
               1000,
               '"We develop application that benefit your business."',
               1000
             ]}
             wrapper="span"
-            speed={50}
+            speed={500}
             style={{ fontSize: '2rem', display: 'inline-block' }}
             repeat={Infinity}
           /></p>
@@ -76,11 +76,15 @@ function Home() {
       </div>
       
         {/* Moving words from left to right */}
-
-        <div>
+        <div style={{backgroundColor: "#000F1A"}}>
+        <br/><br/>
+          <BeginTour/>
         </div>
+
         <SkillProjectFeedback/>
         <RunningWords/>
+        <br/><br/><br/><br/><br/><br/><br/>
+
 
         
 

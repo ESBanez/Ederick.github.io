@@ -22,7 +22,7 @@ const Logos = [
     {
         name: "instagram",
         id: 4,
-        path: "https://logos-world.net/wp-content/uploads/2020/04/Instagram-Logo.png",
+        path: "https://www.kindpng.com/picc/m/1-17499_instagram-logo-white-text-black-background-instagram-word.png",
         alt: "instagram logo",
     },
     {
