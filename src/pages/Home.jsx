@@ -83,16 +83,19 @@ function Home() {
           <br/><br/><br/>
         </div>
 
-
+      <div style={{backgroundColor:"#000F1A"}}>
         <div data-aos="fade-up" style={{backgroundColor: "#000F1A", color:"#00FFA1", display:"flex", justifyContent: "center"}}>
           <h4>
             How websites and mobile app help your daily life?
           </h4>
         </div>
-        <div style={{marginTop:"-4rem"}}  data-aos="fade-up" data-aos-duration="10000">
+        <div style={{marginTop:"-4rem"}}  data-aos="fade-up" data-aos-duration="100000">
           <Testimonials />
         </div>
-      <Footer/>
+        <div  data-aos="fade-up" data-aos-duration="100000">
+          <Footer/>
+        </div>
+      </div>
     </>
     )
     }
