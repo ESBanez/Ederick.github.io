@@ -9,7 +9,9 @@ import {
   faBriefcase,
   faBlog,
 } from "@fortawesome/free-solid-svg-icons";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 
 const BeginTour = () => {
@@ -72,16 +74,16 @@ const BeginTour = () => {
 
   return (
     <>
-        <div className="container">
+        <div className="container" style={{zIndex:"10"}}>
             <div style={{ display: "flex", justifyContent: "center" }}>
                 <button className="glowing-btn" onClick={() => setOpen(true)}>
-                <span className="faulty-letter">BEGIN-</span>TOUR
+                <span className="faulty-letter">ClICK TO-</span>BEGIN
                 </button>
             </div>
             <Divider />
             <aside style={{ display: "flex", justifyContent: "space-around", padding: "1rem", decoration: "none" }}>
                 {cardo.map((card) => (
-                <div key={card.id} className="card" ref={card.ref}>
+                <div  data-aos="fade-up" data-aos-duration="10000" key={card.id} className="card" ref={card.ref}>
                     <div className="face face1">
                     <div className="content">
                         <i>

@@ -1,5 +1,9 @@
 
 import "../sass/Testimonials.scss"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 
 function Testimonials() {
 
@@ -8,7 +12,7 @@ function Testimonials() {
       <div className="outerdiv">
         <div className="innerdiv">
           {/* <!-- div1 --> */}
-          <div className="div1 eachdiv">
+          <div className="div1 eachdiv" data-aos="fade-up" data-aos-duration="10000">
             <div className="userdetails">
               <div className="imgbox">
                 <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-daniel.jpg" alt=""/>
@@ -22,14 +26,12 @@ function Testimonials() {
               <h4>A Health Revolution: Transforming Healthcare with Telehealth Apps and Websites</h4>
               <p>Telehealth apps and health information websites have been a lifeline in these times,
                  ushering in an unprecedented era of healthcare accessibility. They've fundamentally transformed the way I approach my well-being and medical needs. With these innovative tools, I can seamlessly connect with healthcare professionals, access my medical records, and proactively monitor my health, all from the comfort of my home.
-                These platforms offer more than just convenience; they provide a sense of security and empowerment.
-                 Telehealth appointments eliminate the need for lengthy commutes and waiting rooms, making healthcare consultations efficient and patient-centric.
-                  I can discuss my concerns with a medical expert in real-time.”
+                These platforms offer more than just convenience; they provide a sense of security and empowerment.”
              </p>
             </div>
           </div>
           {/* <!-- div2 --> */}
-          <div className="div2 eachdiv">
+          <div className="div2 eachdiv"  data-aos="fade-up" data-aos-duration="10000">
             <div className="userdetails">
               <div className="imgbox">
                 <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jonathan.jpg" alt=""/>
@@ -43,14 +45,12 @@ function Testimonials() {
               <h4>Exploring New Culinary Horizons.</h4>
               <p>
                 “Cooking and recipe apps have turned me into a culinary explorer.
-                I've discovered new recipes, learned cooking techniques, and even created my own signature dishes.
-                These apps offer step-by-step instructions and shopping lists,
-                making cooking a delightful experience.”
+                I've discovered new recipes, learned cooking techniques, and even created my own signature dishes.”
               </p>
             </div>
           </div>
           {/* <!-- div3 --> */}
-          <div className="div3 eachdiv">
+          <div className="div3 eachdiv"  data-aos="fade-up" data-aos-duration="10000">
             <div className="userdetails">
               <div className="imgbox">
                 <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-kira.jpg" alt=""/>
@@ -74,7 +74,7 @@ function Testimonials() {
             </div>
           </div>
           {/* <!-- div4 --> */}
-          <div className="div4 eachdiv">
+          <div className="div4 eachdiv"  data-aos="fade-up" data-aos-duration="10000">
             <div className="userdetails">
               <div className="imgbox">
                 <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jeanette.jpg" alt=""/>
@@ -92,7 +92,7 @@ function Testimonials() {
             </div>
           </div>
           {/* <!-- div5 --> */}
-          <div className="div5 eachdiv">
+          <div className="div5 eachdiv"  data-aos="fade-up" data-aos-duration="10000">
             <div className="userdetails">
               <div className="imgbox">
                 <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-patrick.jpg" alt=""/>
