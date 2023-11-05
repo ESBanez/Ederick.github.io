@@ -57,7 +57,7 @@ $animationSpeed: 50s;
 	.slide-track {
 		animation: scroll $animationSpeed linear infinite;
 		display: flex;
-		width: calc(-250px * 5); // Adjust the slide count
+		width: calc(-250px * 5  ); // Adjust the slide count
 		padding: 0 250px; // Add padding for smooth looping
 	}
 	

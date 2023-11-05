@@ -12,6 +12,8 @@ import RunningWords from "../components/RunningWords.jsx";
 // import Tooltip from '@mui/material/Tooltip';
 import MovingPictures from "./../components/MovingPictures";
 import BeginTour from "./../components/BeginTour";
+import Testimonials from "./../components/Testimonials";
+import Footer from "./../components/Footer";
 
 
 function Home() {
@@ -31,7 +33,7 @@ function Home() {
               1000,
               '"We make life easier for you."',
               1000,
-              '"We develop application that benefit your business."',
+              '"We develop application that benefit your daily life and business."',
               1000
             ]}
             wrapper="span"
@@ -79,14 +81,22 @@ function Home() {
         <div style={{backgroundColor: "#000F1A"}}>
           <br/><br/>
             <BeginTour/>
+            <RunningWords style={{backgroundColor: "#000F1A"}}/>
+
+          <br/><br/><br/>
+
         </div>
 
-        <RunningWords style={{backgroundColor: "#000F1A"}}/>
-        <br/><br/><br/><br/><br/><br/><br/>
 
-
-        
-
+        <div style={{backgroundColor: "#000F1A", color:"#00FFA1", display:"flex", justifyContent: "center"}}>
+          <h4>
+            How websites and mobile app help your daily life?
+          </h4>
+        </div>
+        <div style={{marginTop:"-4rem"}}>
+          <Testimonials />
+        </div>
+        <Footer/>
     </>
     )
     }
