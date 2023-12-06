@@ -38,7 +38,7 @@ function Home() {
               1000
             ]}
             wrapper="span"
-            speed={500}
+            speed={200}
             style={{ fontSize: '2rem', display: 'inline-block' }}
             repeat={Infinity}
           /></p>
