@@ -72,7 +72,7 @@ const BeginTour = () => {
     }
   ];
                                 //   ref={ref1}, ref={ref2, ref={ref3}
-                                //   <i className="fab"><FontAwesomeIcon icon={faWindows} /></i>            
+                                // ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,  <i className="fab"><FontAwesomeIcon icon={faWindows} /></i>            
                                 //   <i className="fab"><FontAwesomeIcon icon={faAndroid} /></i>
                                 //   <i className="fab"><FontAwesomeIcon icon={faApple} /></i>
 
