@@ -9,7 +9,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import * as React from 'react';
-import Footer from "./Footer";
+
 
 
 const styles = {
@@ -148,7 +148,6 @@ function SkillsCarousel() {
         </BootstrapDialog>
       </React.Fragment>
       <br/><br/><br/><br/><br/>
-      <Footer/>
     </>
   );
 }
