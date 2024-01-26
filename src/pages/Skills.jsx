@@ -16,7 +16,7 @@ function Skills() {
           </div>
           <BackTop /> {/* Change FloatButton.BackTop to BackTop */}
         </div>
-        <div className="sticky-card" data-aos="fade-out" data-aos-duration="100000" style={{ backgroundColor: "#000F1A", flexDirection: "row"}}>
+        <div className="sticky-card" data-aos="fade-out" data-aos-duration="1000000" style={{ backgroundColor: "#000F1A", flexDirection: "row"}}>
           <SkillsCarousel />
         </div>
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
