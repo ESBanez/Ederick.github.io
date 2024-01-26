@@ -26,7 +26,7 @@ img {
   -moz-transform: scale(1.04);
   -o-transform: scale(1.04);
   -ms-transform: scale(1.04);
-  transform: scale(1.04);
+  transform: scale(1.1);
   }
 
 
@@ -64,4 +64,9 @@ img {
   height:90%;
   object-fit:cover;
 
+}
+.sticky-card {
+  position: sticky;
+  top: 10px; /* Adjust the top value as needed */
+  z-index: 1;
 }
