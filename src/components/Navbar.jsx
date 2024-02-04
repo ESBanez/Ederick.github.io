@@ -68,7 +68,6 @@ function Navbar() {
       borderTop: "2px solid #00FFA1", // Create a bottom border
       zIndex: 1, // Ensure the element appears on top
       position: "relative", // Set a relative position to manage stacking
-      padding: "0.5rem", // Add padding for depth
     }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>

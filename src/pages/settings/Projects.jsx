@@ -12,6 +12,7 @@ function Projects() {
         <div className="container" style={{ display: 'flex', justifyContent: 'center', marginTop:"-8rem" }}>
           <BeginTour/>
         </div>
+        
         <FloatButton.BackTop />
       </div>
     </div>

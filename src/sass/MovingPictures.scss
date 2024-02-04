@@ -10,7 +10,9 @@ $grey: #93B1A6; // rgb(147,177,166)
 
 
 @mixin white-gradient {
-	background: linear-gradient(to right,  rgb(0, 0, 0) 0%,rgba(255,255,255,0) 100%);
+	background: linear-gradient
+	(to right,
+	  rgb(0, 0, 0) 0%,rgba(255,255,255,0) 20%);
 }
 
 $animationSpeed: 40s;
@@ -57,15 +59,16 @@ $animationSpeed: 40s;
 		animation: scroll $animationSpeed linear infinite;
 		display: flex;
 		width: calc(250px * 14);
+		transform: translate3d(0, 0, 0);
+
 	}
 	
     .slide {
         height: 70px;
-        width: 250px;
         display: flex;
         align-items: center; /* Vertically center the content */
         justify-content: center; /* Horizontally center the content */
-
+		min-width: 120px;
         background: 
         linear-gradient(to top, $darkgreen, $blue), /* Gradient for the top */
         linear-gradient(to bottom, $darkgreen, $blue), /* Gradient for the bottom */
